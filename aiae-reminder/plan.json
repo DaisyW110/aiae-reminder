@@ -1,0 +1,19 @@
+{
+  "course": "AIAE 人工智能应用工程师",
+  "total_lessons": 90,
+  "url": "http://www.chinapeixun.org.cn/login.html",
+  "start": "2026-10-08",
+  "end": "2026-10-17",
+  "days": {
+    "2026-10-08": {"rest": false, "from": 1, "to": 11, "lessons": 11, "hours": 3.0, "title": "人工智能的发展与前沿趋势-1 ~ 伦理约束与版权边界-2"},
+    "2026-10-09": {"rest": false, "from": 12, "to": 27, "lessons": 16, "hours": 4.2, "title": "伦理约束与版权边界-3 ~ 人工智能核心技术-机器学习-1"},
+    "2026-10-10": {"rest": false, "from": 28, "to": 38, "lessons": 11, "hours": 3.9, "title": "人工智能核心技术-机器学习-2 ~ 本地部署方法教学-1"},
+    "2026-10-11": {"rest": true,  "note": "周日休整 · 今天不学"},
+    "2026-10-12": {"rest": false, "from": 39, "to": 47, "lessons": 9, "hours": 3.0, "title": "本地部署方法教学-2（范老师补充） ~ 行业应用案例-医学行业-1"},
+    "2026-10-13": {"rest": false, "from": 48, "to": 59, "lessons": 12, "hours": 4.3, "title": "行业应用案例-医学行业-2 ~ 编程应用基础-机器学习-1"},
+    "2026-10-14": {"rest": false, "from": 60, "to": 73, "lessons": 14, "hours": 4.3, "title": "编程应用基础-机器学习-2 ~ 办公应用（2）-2"},
+    "2026-10-15": {"rest": false, "from": 74, "to": 83, "lessons": 10, "hours": 4.1, "title": "办公应用（2）-3 ~ AI实现（2）-2（AI数字人更新版）"},
+    "2026-10-16": {"rest": false, "from": 84, "to": 90, "lessons": 7, "hours": 3.4, "title": "AI实现（2）-3（定制视频示范） ~ 漫剧制作-5（平台实现）"},
+    "2026-10-17": {"rest": true,  "note": "机动日 · 补漏或复盘"}
+  }
+}
