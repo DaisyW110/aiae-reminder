@@ -67,24 +67,27 @@ def build_message(plan, day_key):
         return "😴 %s 今日休息" % plan["course"], html, md
 
     title = "📚 %s 今日学习提醒" % plan["course"]
+    rng = item.get("range") or ("第%d-%d节" % (item["from"], item["to"]))
     html = (
         "<p><b>%s（周%s）今日任务</b></p>"
-        "<p style='font-size:16px;margin:8px 0'>第 %d-%d 节 · 共 %d 节 · 约 %.1f 小时</p>"
+        "<p style='font-size:18px;margin:8px 0'><b>章节 %s</b></p>"
+        "<p style='color:#666'>第 %d-%d 节 · 共 %d 节 · 约 %.1f 小时</p>"
         "<p style='color:#666'>%s</p>"
         "<p><a href=\"%s\">📚 打开课程网站</a></p>"
         "<p style='color:#999;font-size:12px'>学完记得回到工作台打卡</p>"
-    ) % (day_key, weekday, item["from"], item["to"], item["lessons"],
+    ) % (day_key, weekday, rng, item["from"], item["to"], item["lessons"],
          item["hours"], item["title"], COURSE_URL)
     if day_key == plan["end"]:
         html += "<p><b>今天是最后一天，加油！</b></p>"
 
     md = (
         "## %s（周%s）今日任务\n\n"
+        "# 章节 %s\n\n"
         "**第 %d-%d 节 · 共 %d 节 · 约 %.1f 小时**\n\n"
         "> %s\n\n"
         "[📚 打开课程网站](%s)\n\n"
         "---\n学完记得回到工作台打卡\n"
-    ) % (day_key, weekday, item["from"], item["to"], item["lessons"],
+    ) % (day_key, weekday, rng, item["from"], item["to"], item["lessons"],
          item["hours"], item["title"], COURSE_URL)
     if day_key == plan["end"]:
         md += "\n**今天是最后一天，加油！**\n"
